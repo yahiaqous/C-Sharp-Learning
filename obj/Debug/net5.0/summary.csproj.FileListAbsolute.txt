@@ -1,0 +1,16 @@
+/home/yahia/Learning/c#_learn/summary/bin/Debug/net5.0/summary
+/home/yahia/Learning/c#_learn/summary/bin/Debug/net5.0/summary.deps.json
+/home/yahia/Learning/c#_learn/summary/bin/Debug/net5.0/summary.runtimeconfig.json
+/home/yahia/Learning/c#_learn/summary/bin/Debug/net5.0/summary.runtimeconfig.dev.json
+/home/yahia/Learning/c#_learn/summary/bin/Debug/net5.0/summary.dll
+/home/yahia/Learning/c#_learn/summary/bin/Debug/net5.0/ref/summary.dll
+/home/yahia/Learning/c#_learn/summary/bin/Debug/net5.0/summary.pdb
+/home/yahia/Learning/c#_learn/summary/obj/Debug/net5.0/summary.csproj.AssemblyReference.cache
+/home/yahia/Learning/c#_learn/summary/obj/Debug/net5.0/summary.GeneratedMSBuildEditorConfig.editorconfig
+/home/yahia/Learning/c#_learn/summary/obj/Debug/net5.0/summary.AssemblyInfoInputs.cache
+/home/yahia/Learning/c#_learn/summary/obj/Debug/net5.0/summary.AssemblyInfo.cs
+/home/yahia/Learning/c#_learn/summary/obj/Debug/net5.0/summary.csproj.CoreCompileInputs.cache
+/home/yahia/Learning/c#_learn/summary/obj/Debug/net5.0/summary.dll
+/home/yahia/Learning/c#_learn/summary/obj/Debug/net5.0/ref/summary.dll
+/home/yahia/Learning/c#_learn/summary/obj/Debug/net5.0/summary.pdb
+/home/yahia/Learning/c#_learn/summary/obj/Debug/net5.0/summary.genruntimeconfig.cache
