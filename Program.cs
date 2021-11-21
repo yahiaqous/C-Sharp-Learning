@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace summary
 {
@@ -119,7 +120,60 @@ namespace summary
 
             Person p1 = new Person();
             p1.SayHi();
+
+
+            // Arrays
+
+            int [] array1 = new int[]{3,8,9,7,1}; // Declaring an array of integers that holds 5 integers
+            
+            int [] array2 = {3,8,9,7,1}; // Declaring an array of integers
+            
+            // array2[5]=8; // Wrong, because ARRAYS IN C# DO NOT GROW
+
+            for (int i = 0; i < 5; i++)
+            {
+            Console.WriteLine(array2[i]);
             }
+
+            foreach (var i in array2)  // Best practice to accesss all elements in array
+            {
+                Console.Write("{0} ", i);
+            }
+            Console.WriteLine();
+
+
+            int [,] array3 = {{2,3},{5,6},{4,6}}; // Declaring Multidimensional Array (Matrix)
+
+            Console.WriteLine("length of multidimensional array= {0}",array3.Length); // length of multidimensional array equals all the elements
+            Console.WriteLine("Dimensions of multidimensional array= {0}",array3.Rank); // Dimensions of multidimensional array using Rank
+
+            Console.WriteLine("Max value= {0}",array2.Max()); // Max value of array
+            Console.WriteLine("Min value= {0}",array2.Min()); // Min value of array
+            Console.WriteLine("Sum value= {0}",array2.Sum()); // Sum of array values
+
+            foreach (var item in array3)
+            {
+                Console.Write(item + " ");
+            }
+
+            Console.WriteLine();
+
+
+            int [][] jaggedArr = new int[][]{  // Declaring Jagged Array (Array of Arrays)
+                new int[]{1,5,8},
+                new int[]{5,9},
+                new int[]{5,7,8,6}
+            };
+
+            Console.WriteLine("jagged array length ={0}",jaggedArr.Length);
+
+
+
+
+            
+
+            }
+     
 
         static void Print(int x){   // Adding static if we are outside the Main method
             Console.WriteLine("{0} - Method",x);
