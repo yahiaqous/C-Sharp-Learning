@@ -187,7 +187,7 @@ namespace summary
     // Classes
     class Person{
         private int age;  // access modifiers: public, private, protected, internal, protected internal
-        private string name;
+        private string name;  
 
         public string Name // property is a member that provides a flexible mechanism to read, write, or compute the value of a private field
         {
@@ -211,6 +211,40 @@ namespace summary
             Console.WriteLine("Hi - Method inside Class");
         }
 
+
+        // Class Inheritance
+
+        class Animal // Base classs (Parent)
+        {
+            protected int Legs {get;set;} // protected access modifier can be accessed in the derived classes
+            public int Age {get;set;}
+        }
+
+        class Dog:Animal // Derived class (Child)
+        {
+            public Dog(){
+                Legs = 4;
+            }
+            public void Bark(){
+                Console.WriteLine("Woof");
+            }
+        }
+
+        // Polymorphism (Override methods in derived classes)
+        class Shape
+        {
+            public virtual void Draw(){
+                Console.WriteLine("Base Draw");
+            }
+        }
+
+        class Circle:Shape
+        {
+            public override void Draw()
+            {
+                Console.WriteLine("Circle Draw");
+            }
+        }
 
     }
 }
