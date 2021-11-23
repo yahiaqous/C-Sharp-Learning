@@ -116,10 +116,13 @@ namespace summary
             }
             SayHi();
 
-            Print(5);
+            Print(5); // Accessed directly because of using static word
 
             Person p1 = new Person();
+            Person p2 = new Person();
             p1.SayHi();
+
+            Console.WriteLine("Class Variable accessed directly without an object using static word, count ={0}",Person.count);
 
 
             // Arrays
@@ -175,7 +178,7 @@ namespace summary
             }
      
 
-        static void Print(int x){   // Adding static if we are outside the Main method
+        static void Print(int x){   // Adding static word to make it belongs to the classs and accesssed directly
             Console.WriteLine("{0} - Method",x);
         }
   
@@ -194,12 +197,20 @@ namespace summary
 
         public string Tall { get; set; } // Auto-Implement Property
 
+        public static int count =0;  // Adding static word means that the variable, property, or method belongss to the class itself not to the instances, and can be accessed directly usingf the class name without an object
         public Person(){  // Constructor method has exactly the same name as its class, is public, and does not have any return type
             Console.WriteLine("Class Constructor");
+            count++;
+        }
+
+        ~Person(){  // Destrctor method has exactly the same name as its class prefixed with ~ 
+            Console.WriteLine("Classs Destructor");
         }
 
         public void SayHi(){
             Console.WriteLine("Hi - Method inside Class");
         }
+
+
     }
 }
