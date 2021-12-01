@@ -31,3 +31,7 @@ Consists of:
 To create a new app: **dotnet new console -o PROJECTNAME**
 
 To run the app: **dotnet run**
+
+## Certificate
+
+![SoloLearn-C#](./SoloLearn-C#.png)
