@@ -34,4 +34,4 @@ To run the app: **dotnet run**
 
 ## Certificate
 
-![SoloLearn-C#](./SoloLearn-C#.png)
+![SoloLearn-C#](./pictures/SoloLearnCertificate.png)
