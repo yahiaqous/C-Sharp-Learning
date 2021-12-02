@@ -44,6 +44,8 @@ namespace summary
 
             // ++x; --x; prefix
             // x++; x--; postfix
+            
+
 
             // Conditions and Loops
 
@@ -100,12 +102,13 @@ namespace summary
             Console.WriteLine(msg );
 
 
+
             // Methods 
 
-            // <return type> name(type1 par1, type2 par2, … , typeN parN)
-            // {
-            //   List of statements
-            // }
+            /*<return type> name(type1 par1, type2 par2, … , typeN parN)
+            {
+              List of statements
+            }*/
 
             int Sqr(int x)
             {
@@ -187,23 +190,25 @@ namespace summary
             
 
             // List<T>
-            // Count - A property that gets the number of elements contained in the list
-            // Item[int i] - Gets or sets the element in the list at the index i. Item is the indexer and is not required when accessing an element. You only need to use the brackets [] and the index value inside the brackets
-            // Add(T t) - Adds an element t to the end of the list
-            // RemoveAt(int index) - Removes the element at the specified position (index) from the list
-            // Sort() - Sorts elements in the list
-            // Capacity - A property that gets the number of elements the list can hold before needing to be resized.
-            // Clear() - Removes all the elements from the list
-            // TrimExcess() - Sets the capacity to the actual number of elements in the list. This is useful when trying to reduce memory overhead
-            // AddRange(IEnumerable coll) - Adds the elements of collection coll with elements of the same type as List<T> to the end of the list. IEnumerable is the collections interface that supports simple iteration over the collection
-            // Insert(int i, T t) - Inserts an element t at a specific index i in the list
-            // InsertRange(int i, IEnumerable coll) - Inserts the elements of a collection coll at a specified index i in the list. IEnumerable is the collections interface that supports simple iteration over the collection
-            // Remove(T t) - Removes the first occurrence of the object t from the list
-            // RemoveRange(int i, int count) - Removes a specified number of elements count from the list starting at a specified index i
-            // Contains(T t) - Returns true if the specified element t is present in the list
-            // IndexOf(T t) - Returns the index of the first occurrence of the element t in the list
-            // Reverse() - Reverses the order of the elements in the list
-            // ToArray() - Copies the elements of the list into a new array
+            /*
+            - Count - A property that gets the number of elements contained in the list
+            - Item[int i] - Gets or sets the element in the list at the index i. Item is the indexer and is not required when accessing an element. You only need to use the brackets [] and the index value inside the brackets
+            - Add(T t) - Adds an element t to the end of the list
+            - RemoveAt(int index) - Removes the element at the specified position (index) from the list
+            - Sort() - Sorts elements in the list
+            - Capacity - A property that gets the number of elements the list can hold before needing to be resized.
+            - Clear() - Removes all the elements from the list
+            - TrimExcess() - Sets the capacity to the actual number of elements in the list. This is useful when trying to reduce memory overhead
+            - AddRange(IEnumerable coll) - Adds the elements of collection coll with elements of the same type as List<T> to the end of the list. IEnumerable is the collections interface that supports simple iteration over the collection
+            - Insert(int i, T t) - Inserts an element t at a specific index i in the list
+            - InsertRange(int i, IEnumerable coll) - Inserts the elements of a collection coll at a specified index i in the list. IEnumerable is the collections interface that supports simple iteration over the collection
+            - Remove(T t) - Removes the first occurrence of the object t from the list
+            - RemoveRange(int i, int count) - Removes a specified number of elements count from the list starting at a specified index i
+            - Contains(T t) - Returns true if the specified element t is present in the list
+            - IndexOf(T t) - Returns the index of the first occurrence of the element t in the list
+            - Reverse() - Reverses the order of the elements in the list
+            - ToArray() - Copies the elements of the list into a new array 
+            */
 
             List<int> li = new List<int>(); 
             li.Add(5);
@@ -211,17 +216,19 @@ namespace summary
 
 
             // SortedList<K, V>
-            // Count - Gets the number of key/value pairs contained in the sorted list
-            // Item[K key] - Gets or sets the value associated the specified key contained in the sorted list. Item is the indexer and is not required when accessing an element. You only need to use the brackets [] and the key, value
-            // Keys - Gets a sorted and indexed collection containing only the keys in the sorted list
-            // Add(K key, V value) - Adds an element with a specific key, value pair into the sorted list
-            // Remove(K key) - Removes the element with the specific key, value pair associated with the specified key from the sorted list
-            // Values - Gets a sorted and indexed collection of the values in the sorted list
-            // Clear() - Removes all the elements from the sorted list
-            // ContainsKey(K key) - Returns true when the specified key is present in the sorted list
-            // ContainsValue(V value) - Returns true when a specified value is present in the sorted list
-            // IndexOfKey(K key) - Returns the index of the specified key within the sorted list
-            // IndexOfValue(V value) - Returns the index of the specified value within the sorted list
+            /*
+            - Count - Gets the number of key/value pairs contained in the sorted list
+            - Item[K key] - Gets or sets the value associated the specified key contained in the sorted list. Item is the indexer and is not required when accessing an element. You only need to use the brackets [] and the key, value
+            - Keys - Gets a sorted and indexed collection containing only the keys in the sorted list
+            - Add(K key, V value) - Adds an element with a specific key, value pair into the sorted list
+            - Remove(K key) - Removes the element with the specific key, value pair associated with the specified key from the sorted list
+            - Values - Gets a sorted and indexed collection of the values in the sorted list
+            - Clear() - Removes all the elements from the sorted list
+            - ContainsKey(K key) - Returns true when the specified key is present in the sorted list
+            - ContainsValue(V value) - Returns true when a specified value is present in the sorted list
+            - IndexOfKey(K key) - Returns the index of the specified key within the sorted list
+            - IndexOfValue(V value) - Returns the index of the specified value within the sorted list
+            */
 
             SortedList<string, int> pupil = new SortedList<string, int>();
             pupil.Add("Bob", 11);
@@ -234,13 +241,15 @@ namespace summary
 
 
             // Stack<T>
-            // Count - Returns the number of elements in the stack
-            // Peek() - Returns the element at the top of the stack without removing it
-            // Pop() - Returns the element at the top of the stack and removes it from the stack
-            // Push(T t) - Inserts an element t at the top of the stack
-            // Clear() - Removes all the elements from the stack
-            // Contains(T t) - Returns true when the element t is present in the stack
-            // ToArray() - Copies the stack into a new array
+            /*
+            - Count - Returns the number of elements in the stack
+            - Peek() - Returns the element at the top of the stack without removing it
+            - Pop() - Returns the element at the top of the stack and removes it from the stack
+            - Push(T t) - Inserts an element t at the top of the stack
+            - Clear() - Removes all the elements from the stack
+            - Contains(T t) - Returns true when the element t is present in the stack
+            - ToArray() - Copies the stack into a new array
+            */
 
             Stack<int> st = new Stack<int>();
             st.Push(11);
@@ -249,13 +258,15 @@ namespace summary
 
 
             // Queue<T>
-            // Count - Gets the number of elements in the queue
-            // Dequeue() - Returns the object at the beginning of the queue and also removes it
-            // Enqueue(T t) - Adds the object t to the end of the queue
-            // Clear() - Removes all objects from the queue
-            // Contains(T t) - Returns true when the element t is present in the queue
-            // Peek() - Returns the object at the beginning of the queue without removing it
-            // ToArray() - Copies the queue into a new array
+            /*
+            - Count - Gets the number of elements in the queue
+            - Dequeue() - Returns the object at the beginning of the queue and also removes it
+            - Enqueue(T t) - Adds the object t to the end of the queue
+            - Clear() - Removes all objects from the queue
+            - Contains(T t) - Returns true when the element t is present in the queue
+            - Peek() - Returns the object at the beginning of the queue without removing it
+            - ToArray() - Copies the queue into a new array
+            */
 
             Queue<string> q = new Queue<string>();
             q.Enqueue("A");
@@ -267,29 +278,33 @@ namespace summary
 
 
             // Dictionary<U, V>
-            // Count - Gets the number of key/value pairs contained in the dictionary
-            // Item[K key] - Gets the value associated with the specified key in the dictionary. Item is the indexer and is not required when accessing an element. You only need to use the brackets [] and key value
-            // Keys - Gets an indexed collection containing only the keys contained in the dictionary
-            // Add(K key, V value) - Adds the key, value pair to the dictionary
-            // Remove(K key) - Removes the key/value pair related to the specified key from the dictionary
-            // Values - Gets an indexed collection containing only the values in the dictionary
-            // Clear() - Removes all the key/value pairs from the dictionary
-            // ContainsKey(K key) - Returns true if the specified key is present in the dictionary
-            // ContainsValue(V value) - Returns true if the specified value is present in the dictionary
+            /*
+            - Count - Gets the number of key/value pairs contained in the dictionary
+            - Item[K key] - Gets the value associated with the specified key in the dictionary. Item is the indexer and is not required when accessing an element. You only need to use the brackets [] and key value
+            - Keys - Gets an indexed collection containing only the keys contained in the dictionary
+            - Add(K key, V value) - Adds the key, value pair to the dictionary
+            - Remove(K key) - Removes the key/value pair related to the specified key from the dictionary
+            - Values - Gets an indexed collection containing only the values in the dictionary
+            - Clear() - Removes all the key/value pairs from the dictionary
+            - ContainsKey(K key) - Returns true if the specified key is present in the dictionary
+            - ContainsValue(V value) - Returns true if the specified value is present in the dictionary
+            */
 
 
             // HashSet<T>
-            // Count - Returns the number of values in the hash set
-            // Add(T t) - Adds a value (t) to the hash set
-            // IsSubsetOf(ICollection c) - Returns true if the hash set is a subset of the specified collection (c)
-            // Remove(T t) - Removes the value (t) from the hash set
-            // Clear() - Removes all the elements form the hash set
-            // Contains(T t) - Returns true when a value (t) is present in the hash set
-            // ToString() - Creates a string from the hash set
-            // IsSupersetOf(ICollection c) - Returns true if the hash set is a superset of the specified collection
-            // UnionWith(ICollection c) - Applies set union operation on the hash set and the specified collection (c)
-            // IntersectWith(ICollection c) - Applies set intersection operation on the hash set and the specified collection (c)
-            // ExceptWith(ICollection c) - Applies set difference operation on the hash set and the specified collection (c)
+            /*
+            - Count - Returns the number of values in the hash set
+            - Add(T t) - Adds a value (t) to the hash set
+            - IsSubsetOf(ICollection c) - Returns true if the hash set is a subset of the specified collection (c)
+            - Remove(T t) - Removes the value (t) from the hash set
+            - Clear() - Removes all the elements form the hash set
+            - Contains(T t) - Returns true when a value (t) is present in the hash set
+            - ToString() - Creates a string from the hash set
+            - IsSupersetOf(ICollection c) - Returns true if the hash set is a superset of the specified collection
+            - UnionWith(ICollection c) - Applies set union operation on the hash set and the specified collection (c)
+            - IntersectWith(ICollection c) - Applies set intersection operation on the hash set and the specified collection (c)
+            - ExceptWith(ICollection c) - Applies set difference operation on the hash set and the specified collection (c)
+            */
 
 
 
@@ -329,18 +344,21 @@ namespace summary
             Swap<string>(ref third, ref fourth);
 
 
+
             // Files
             string str = "Some text";
             File.WriteAllText("test.txt", str);
             string text = File.ReadAllText("test.txt");
             Console.WriteLine(text);
 
-            // AppendAllText() - appends text to the end of the file.
-            // Create() - creates a file in the specified location.
-            // Delete() - deletes the specified file.
-            // Exists() - determines whether the specified file exists.
-            // Copy() - copies a file to a new location.
-            // Move() - moves a specified file to a new location
+            /*
+            - AppendAllText() - appends text to the end of the file.
+            - Create() - creates a file in the specified location.
+            - Delete() - deletes the specified file.
+            - Exists() - determines whether the specified file exists.
+            - Copy() - copies a file to a new location.
+            - Move() - moves a specified file to a new location
+            */
      
         }
         static void Print(int x){   // Adding static word to make it belongs to the classs and accesssed directly
@@ -348,10 +366,12 @@ namespace summary
         }
 
 
+
         // Enums
         enum Days{Sun, Mon, Tue, Wed=6, Thu, Fri, Sat};
-
     }
+
+
 
     // Classes
     class Person{
@@ -397,6 +417,7 @@ namespace summary
                 Console.WriteLine("Woof");
             }
         }
+
 
         // Polymorphism (Override methods in derived classes)
         class Shape
