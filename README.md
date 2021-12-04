@@ -32,6 +32,8 @@ To create a new app: **dotnet new console -o PROJECTNAME**
 
 To run the app: **dotnet run**
 
+Syntax: [Program.cs](https://github.com/YAHIAQOUS/c_sharp_learning/blob/main/Program.cs)
+
 ## Certificate
 
 ![SoloLearn-C#](./pictures/SoloLearnCertificate.png)
