@@ -32,31 +32,34 @@ namespace summary
             // Printing on Console
             Console.Write("Hello World!");
             Console.WriteLine("Hello World!");
-            Console.WriteLine("var1={0};y={1}",var1,var2); // To display a formatted string
+            Console.WriteLine("var1={0};y={1}", var1, var2); // To display a formatted string
 
             Console.WriteLine("What is your Name?");
             string name = Console.ReadLine();
-            Console.WriteLine("Hello {0}",name);
+            Console.WriteLine("Hello {0}", name);
 
             Console.WriteLine("How old are you?");
             int age = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("You are {0} years old",age);
+            Console.WriteLine("You are {0} years old", age);
 
             // ++x; --x; prefix
             // x++; x--; postfix
-            
+
 
 
             // Conditions and Loops
 
             // if-else statement
-            if (var1>3){   // >=, <=, ==, !=
+            if (var1 > 3)
+            {   // >=, <=, ==, !=
                 Console.WriteLine("var1 is bigger than 3 - if-else statement");
             }
-            else if(var1==3){
+            else if (var1 == 3)
+            {
                 Console.WriteLine("var1 is equal 3 - if-else statement");
             }
-            else{
+            else
+            {
                 Console.WriteLine("var1 is smaller than 3 - if-else statement");
             }
 
@@ -78,28 +81,28 @@ namespace summary
             }
 
             // while loop
-            while (var1<30)
+            while (var1 < 30)
             {
-                 Console.WriteLine("var1 equal {0} - while loop", var1);
-                 var1++;
+                Console.WriteLine("var1 equal {0} - while loop", var1);
+                var1++;
             }
 
             // for loop
             for (int i = 0; i < 5; i++)
             {
-                Console.WriteLine("i equals {0} - for loop",i);
+                Console.WriteLine("i equals {0} - for loop", i);
             }
 
             // do-while loop
             do
             {
                 Console.WriteLine("var1 equal {0} - do-while loop", var1);
-            } while (var1<30);
+            } while (var1 < 30);
 
             // ? Conditional Operator 
             string msg;
-            msg = (age>18)? "Your age is Bigger than 15 - Conditional Operator":"Your age is Smaller than 18 - Conditional Operator";
-            Console.WriteLine(msg );
+            msg = (age > 18) ? "Your age is Bigger than 15 - Conditional Operator" : "Your age is Smaller than 18 - Conditional Operator";
+            Console.WriteLine(msg);
 
 
 
@@ -112,13 +115,14 @@ namespace summary
 
             int Sqr(int x)
             {
-                int result = x*x;
+                int result = x * x;
                 return result;
             }
             Sqr(6);
-            Console.WriteLine("{0} - Methods",Sqr(5));
+            Console.WriteLine("{0} - Methods", Sqr(5));
 
-            void SayHi(){   // void for non return methods
+            void SayHi()
+            {   // void for non return methods
                 Console.WriteLine("Hi - Method");
             }
             SayHi();
@@ -128,19 +132,19 @@ namespace summary
             Person p1 = new Person();
             Person p2 = new Person();
             p1.SayHi();
-            Console.WriteLine("Class Variable accessed directly without an object using static word, count ={0}",Person.count);
+            Console.WriteLine("Class Variable accessed directly without an object using static word, count ={0}", Person.count);
 
 
 
             // Arrays
 
-            int [] array1 = new int[]{3,8,9,7,1}; // Declaring an array of integers that holds 5 integers
-            int [] array2 = {3,8,9,7,1}; // Declaring an array of integers
+            int[] array1 = new int[] { 3, 8, 9, 7, 1 }; // Declaring an array of integers that holds 5 integers
+            int[] array2 = { 3, 8, 9, 7, 1 }; // Declaring an array of integers
             // array2[5]=8; // Wrong, because ARRAYS IN C# DO NOT GROW
 
             for (int i = 0; i < 5; i++)
             {
-            Console.WriteLine(array2[i]);
+                Console.WriteLine(array2[i]);
             }
 
             foreach (var i in array2)  // Best practice to accesss all elements in array
@@ -150,14 +154,14 @@ namespace summary
             Console.WriteLine();
 
 
-            int [,] array3 = {{2,3},{5,6},{4,6}}; // Declaring Multidimensional Array (Matrix)
+            int[,] array3 = { { 2, 3 }, { 5, 6 }, { 4, 6 } }; // Declaring Multidimensional Array (Matrix)
 
-            Console.WriteLine("length of multidimensional array= {0}",array3.Length); // length of multidimensional array equals all the elements
-            Console.WriteLine("Dimensions of multidimensional array= {0}",array3.Rank); // Dimensions of multidimensional array using Rank
+            Console.WriteLine("length of multidimensional array= {0}", array3.Length); // length of multidimensional array equals all the elements
+            Console.WriteLine("Dimensions of multidimensional array= {0}", array3.Rank); // Dimensions of multidimensional array using Rank
 
-            Console.WriteLine("Max value= {0}",array2.Max()); // Max value of array
-            Console.WriteLine("Min value= {0}",array2.Min()); // Min value of array
-            Console.WriteLine("Sum value= {0}",array2.Sum()); // Sum of array values
+            Console.WriteLine("Max value= {0}", array2.Max()); // Max value of array
+            Console.WriteLine("Min value= {0}", array2.Min()); // Min value of array
+            Console.WriteLine("Sum value= {0}", array2.Sum()); // Sum of array values
 
             foreach (var item in array3)
             {
@@ -166,17 +170,17 @@ namespace summary
             Console.WriteLine();
 
 
-            int [][] jaggedArr = new int[][]{  // Declaring Jagged Array (Array of Arrays)
+            int[][] jaggedArr = new int[][]{  // Declaring Jagged Array (Array of Arrays)
                 new int[]{1,5,8},
                 new int[]{5,9},
                 new int[]{5,7,8,6}
             };
-            Console.WriteLine("jagged array length ={0}",jaggedArr.Length);
+            Console.WriteLine("jagged array length ={0}", jaggedArr.Length);
 
 
             int a = (int)Days.Tue;
             int b = (int)Days.Wed;
-            Console.WriteLine("Enums {0}, {1}",a,b);
+            Console.WriteLine("Enums {0}, {1}", a, b);
 
 
 
@@ -187,7 +191,7 @@ namespace summary
             // Queue<T>
             // Dictionary<TKey, TValue>
             // Hashset<T>
-            
+
 
             // List<T>
             /*
@@ -210,9 +214,9 @@ namespace summary
             - ToArray() - Copies the elements of the list into a new array 
             */
 
-            List<int> li = new List<int>(); 
+            List<int> li = new List<int>();
             li.Add(5);
-            Console.WriteLine("List {0}",li[0]);
+            Console.WriteLine("List {0}", li[0]);
 
 
             // SortedList<K, V>
@@ -235,7 +239,8 @@ namespace summary
             pupil.Add("Ann", 9);
             pupil.Add("Mike", 12);
             pupil.Remove("Ann");
-            foreach (string s in pupil.Keys){
+            foreach (string s in pupil.Keys)
+            {
                 Console.WriteLine(s + ": " + pupil[s]);
             }
 
@@ -272,7 +277,8 @@ namespace summary
             q.Enqueue("A");
             q.Enqueue("B");
             q.Enqueue("C");
-            foreach (string s in q){
+            foreach (string s in q)
+            {
                 Console.Write(s + " ");
             }
 
@@ -314,33 +320,37 @@ namespace summary
             Console.WriteLine("Choose a number");
             x = Convert.ToInt32(Console.Read());
             y = 0;
-            
-            try {
+
+            try
+            {
                 result = x / y;
                 Console.WriteLine(result);
             }
             // catch (DivideByZeroException e) {    // FileNotFoundException, FormatException, IndexOutOfRangeException, InvalidOperationException, OutOfMemoryException
             //     Console.WriteLine("Cannot divide by 0");
             // }
-            catch(Exception e) {
+            catch (Exception e)
+            {
                 Console.WriteLine(e.Message);
             }
-            finally{
-                Console.WriteLine("finally result = {0}",result);
+            finally
+            {
+                Console.WriteLine("finally result = {0}", result);
             }
 
 
 
             // Generics
-            static void Swap<T>(ref T a, ref T b) {  // <T> Generics allow the reuse of code across different types
+            static void Swap<T>(ref T a, ref T b)
+            {  // <T> Generics allow the reuse of code across different types
                 T temp = a;
                 a = b;
                 b = temp;
             }
-            int first =4, second = 9;
+            int first = 4, second = 9;
             Swap<int>(ref first, ref second);
 
-            string third= "Hello", fourth="World";
+            string third = "Hello", fourth = "World";
             Swap<string>(ref third, ref fourth);
 
 
@@ -359,24 +369,26 @@ namespace summary
             - Copy() - copies a file to a new location.
             - Move() - moves a specified file to a new location
             */
-     
+
         }
-        static void Print(int x){   // Adding static word to make it belongs to the classs and accesssed directly
-            Console.WriteLine("{0} - Method",x);
+        static void Print(int x)
+        {   // Adding static word to make it belongs to the classs and accesssed directly
+            Console.WriteLine("{0} - Method", x);
         }
 
 
 
         // Enums
-        enum Days{Sun, Mon, Tue, Wed=6, Thu, Fri, Sat};
+        enum Days { Sun, Mon, Tue, Wed = 6, Thu, Fri, Sat };
     }
 
 
 
     // Classes
-    class Person{
+    class Person
+    {
         private int age;  // access modifiers: public, private, protected, internal, protected internal
-        private string name;  
+        private string name;
 
         public string Name // property is a member that provides a flexible mechanism to read, write, or compute the value of a private field
         {
@@ -386,17 +398,20 @@ namespace summary
 
         public string Tall { get; set; } // Auto-Implement Property
 
-        public static int count =0;  // Adding static word means that the variable, property, or method belongss to the class itself not to the instances, and can be accessed directly usingf the class name without an object
-        public Person(){  // Constructor method has exactly the same name as its class, is public, and does not have any return type
+        public static int count = 0;  // Adding static word means that the variable, property, or method belongss to the class itself not to the instances, and can be accessed directly usingf the class name without an object
+        public Person()
+        {  // Constructor method has exactly the same name as its class, is public, and does not have any return type
             Console.WriteLine("Class Constructor");
             count++;
         }
 
-        ~Person(){  // Destrctor method has exactly the same name as its class prefixed with ~ 
+        ~Person()
+        {  // Destrctor method has exactly the same name as its class prefixed with ~ 
             Console.WriteLine("Classs Destructor");
         }
 
-        public void SayHi(){
+        public void SayHi()
+        {
             Console.WriteLine("Hi - Method inside Class");
         }
 
@@ -404,16 +419,18 @@ namespace summary
         // Class Inheritance
         class Animal // Base classs (Parent)
         {
-            protected int Legs {get;set;} // protected access modifier can be accessed in the derived classes
-            public int Age {get;set;}
+            protected int Legs { get; set; } // protected access modifier can be accessed in the derived classes
+            public int Age { get; set; }
         }
 
-        class Dog:Animal // Derived class (Child)
+        class Dog : Animal // Derived class (Child)
         {
-            public Dog(){
+            public Dog()
+            {
                 Legs = 4;
             }
-            public void Bark(){
+            public void Bark()
+            {
                 Console.WriteLine("Woof");
             }
         }
@@ -422,12 +439,13 @@ namespace summary
         // Polymorphism (Override methods in derived classes)
         class Shape
         {
-            public virtual void Draw(){
+            public virtual void Draw()
+            {
                 Console.WriteLine("Base Draw");
             }
         }
 
-        class Circle:Shape
+        class Circle : Shape
         {
             public override void Draw()
             {
