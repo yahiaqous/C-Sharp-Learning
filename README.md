@@ -12,6 +12,7 @@ C# is an elegant object-oriented language that enables developers to build a var
 - Client-server applications
 - Database applications ...etc
 
+
 ## The .NET Framework
 
 Consists of:
