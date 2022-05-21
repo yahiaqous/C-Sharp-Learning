@@ -1,5 +1,3 @@
-<!-- @format -->
-
 # Welcome to C#
 
 This is a brief of learning C# Language from [SoloLearn](https://www.sololearn.com/learning/1080)
